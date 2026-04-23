@@ -1,5 +1,0 @@
-Actual Label,Predicted Label,Result Type,Video Count
-Fake,Fake,True Positive,77
-Fake,Real,False Negative,23
-Real,Fake,False Positive,25
-Real,Real,True Negative,74
