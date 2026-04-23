@@ -2,20 +2,12 @@
 
 This repository contains a notebook-based deepfake detection workflow built with PyTorch and a ResNet18 backbone. The main notebook trains a binary classifier on extracted face frames and evaluates it on a second dataset.
 
-## Main File
+## Project Files
 
 - `Face Detection.ipynb`: main training and evaluation notebook
-
-## Included Assets
-
-- `data.zip`: archive containing the extracted frame datasets used by the notebook
 - `metrics.resnet.csv`
 - `metrics.efficientnet.csv`
 - `metrics_evaluation.celeb.csv`
-- `Deepfake Detection Model Analysis.twb`
-- `tableau_training_curves.csv`
-- `tableau_confusion_matrix.csv`
-- `tableau_dataset_comparison.csv`
 
 ## Requirements
 
@@ -62,7 +54,3 @@ The notebook performs:
 - training on the extracted face-frame dataset
 - validation metrics during training
 - cross-dataset evaluation on Celeb-DF face frames
-
-## Tableau Files
-
-The Tableau workbook and CSV files are included for visual analysis of training curves, confusion matrices, and dataset comparisons.
