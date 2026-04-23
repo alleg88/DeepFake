@@ -1,0 +1,1635 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='tableau_training_curves' inline='true' name='federated.14nzjuy0dfj08g11m2zxr1d7530k' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_training_curves' name='textscan.1i0f81t0rusa791auxvhd1typas1'>
+            <connection class='textscan' directory='C:/Users/alleg/OneDrive/Desktop/Applied Data Analysis/Assesment/face.done' filename='tableau_training_curves.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1i0f81t0rusa791auxvhd1typas1' name='tableau_training_curves.csv' table='[tableau_training_curves#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='Epoch' ordinal='0' />
+            <column datatype='real' name='Accuracy' ordinal='1' />
+            <column datatype='real' name='Loss' ordinal='2' />
+            <column datatype='real' name='F1' ordinal='3' />
+            <column datatype='string' name='Phase' ordinal='4' />
+            <column datatype='string' name='Model' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_training_curves.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Epoch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Epoch]</local-name>
+            <parent-name>[tableau_training_curves.csv]</parent-name>
+            <remote-alias>Epoch</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_training_curves.csv_588FB8B33868415E8E2702CA430FED1E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accuracy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Accuracy]</local-name>
+            <parent-name>[tableau_training_curves.csv]</parent-name>
+            <remote-alias>Accuracy</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_training_curves.csv_588FB8B33868415E8E2702CA430FED1E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loss</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Loss]</local-name>
+            <parent-name>[tableau_training_curves.csv]</parent-name>
+            <remote-alias>Loss</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_training_curves.csv_588FB8B33868415E8E2702CA430FED1E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[tableau_training_curves.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_training_curves.csv_588FB8B33868415E8E2702CA430FED1E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Phase</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Phase]</local-name>
+            <parent-name>[tableau_training_curves.csv]</parent-name>
+            <remote-alias>Phase</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tableau_training_curves.csv_588FB8B33868415E8E2702CA430FED1E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Model]</local-name>
+            <parent-name>[tableau_training_curves.csv]</parent-name>
+            <remote-alias>Model</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tableau_training_curves.csv_588FB8B33868415E8E2702CA430FED1E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[Epoch]' role='dimension' type='ordinal' />
+      <column caption='tableau_training_curves.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_training_curves.csv_588FB8B33868415E8E2702CA430FED1E]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/alleg/AppData/Local/Temp/TableauTemp/#TableauTemp_0i4vtf61pt5lrf13j2gmw02jwaui.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/06/2026 08:21:32 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Epoch</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Epoch]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Epoch</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tableau_training_curves.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_training_curves.csv_588FB8B33868415E8E2702CA430FED1E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Accuracy</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Accuracy]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Accuracy</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tableau_training_curves.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_training_curves.csv_588FB8B33868415E8E2702CA430FED1E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Loss</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Loss]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Loss</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tableau_training_curves.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_training_curves.csv_588FB8B33868415E8E2702CA430FED1E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>3</ordinal>
+              <family>tableau_training_curves.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_training_curves.csv_588FB8B33868415E8E2702CA430FED1E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Phase</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Phase]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Phase</remote-alias>
+              <ordinal>4</ordinal>
+              <family>tableau_training_curves.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[tableau_training_curves.csv_588FB8B33868415E8E2702CA430FED1E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Model</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Model</remote-alias>
+              <ordinal>5</ordinal>
+              <family>tableau_training_curves.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[tableau_training_curves.csv_588FB8B33868415E8E2702CA430FED1E]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='tableau_training_curves.csv' id='tableau_training_curves.csv_588FB8B33868415E8E2702CA430FED1E'>
+            <properties context=''>
+              <relation connection='textscan.1i0f81t0rusa791auxvhd1typas1' name='tableau_training_curves.csv' table='[tableau_training_curves#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='Epoch' ordinal='0' />
+                  <column datatype='real' name='Accuracy' ordinal='1' />
+                  <column datatype='real' name='Loss' ordinal='2' />
+                  <column datatype='real' name='F1' ordinal='3' />
+                  <column datatype='string' name='Phase' ordinal='4' />
+                  <column datatype='string' name='Model' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='tableau_confusion_matrix' inline='true' name='federated.16l5lid0y6dmc2112yblg0bcu65b' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_confusion_matrix' name='textscan.0lsakvr1nzlq8b15czl9e0cg2ibw'>
+            <connection class='textscan' directory='C:/Users/alleg/OneDrive/Desktop/Applied Data Analysis/Assesment/face.done' filename='tableau_confusion_matrix.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0lsakvr1nzlq8b15czl9e0cg2ibw' name='tableau_confusion_matrix.csv' table='[tableau_confusion_matrix#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='Actual Label' ordinal='0' />
+            <column datatype='string' name='Predicted Label' ordinal='1' />
+            <column datatype='string' name='Result Type' ordinal='2' />
+            <column datatype='integer' name='Video Count' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_confusion_matrix.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Actual Label</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Actual Label]</local-name>
+            <parent-name>[tableau_confusion_matrix.csv]</parent-name>
+            <remote-alias>Actual Label</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tableau_confusion_matrix.csv_CF0510E927C24F33ACD546EADD90DA27]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Predicted Label</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Predicted Label]</local-name>
+            <parent-name>[tableau_confusion_matrix.csv]</parent-name>
+            <remote-alias>Predicted Label</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tableau_confusion_matrix.csv_CF0510E927C24F33ACD546EADD90DA27]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Result Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Result Type]</local-name>
+            <parent-name>[tableau_confusion_matrix.csv]</parent-name>
+            <remote-alias>Result Type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tableau_confusion_matrix.csv_CF0510E927C24F33ACD546EADD90DA27]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Video Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Video Count]</local-name>
+            <parent-name>[tableau_confusion_matrix.csv]</parent-name>
+            <remote-alias>Video Count</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_confusion_matrix.csv_CF0510E927C24F33ACD546EADD90DA27]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='tableau_confusion_matrix.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_confusion_matrix.csv_CF0510E927C24F33ACD546EADD90DA27]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/alleg/AppData/Local/Temp/TableauTemp/#TableauTemp_15j28ib1852pz219ciw1y0ah31dm.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/06/2026 08:42:49 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Actual Label</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Actual Label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Actual Label</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tableau_confusion_matrix.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[tableau_confusion_matrix.csv_CF0510E927C24F33ACD546EADD90DA27]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Predicted Label</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Predicted Label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Predicted Label</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tableau_confusion_matrix.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[tableau_confusion_matrix.csv_CF0510E927C24F33ACD546EADD90DA27]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Result Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Result Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Result Type</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tableau_confusion_matrix.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[tableau_confusion_matrix.csv_CF0510E927C24F33ACD546EADD90DA27]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Video Count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Video Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Video Count</remote-alias>
+              <ordinal>3</ordinal>
+              <family>tableau_confusion_matrix.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_confusion_matrix.csv_CF0510E927C24F33ACD546EADD90DA27]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='tableau_confusion_matrix.csv' id='tableau_confusion_matrix.csv_CF0510E927C24F33ACD546EADD90DA27'>
+            <properties context=''>
+              <relation connection='textscan.0lsakvr1nzlq8b15czl9e0cg2ibw' name='tableau_confusion_matrix.csv' table='[tableau_confusion_matrix#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='Actual Label' ordinal='0' />
+                  <column datatype='string' name='Predicted Label' ordinal='1' />
+                  <column datatype='string' name='Result Type' ordinal='2' />
+                  <column datatype='integer' name='Video Count' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='tableau_dataset_comparison' inline='true' name='federated.06ggg8v0s45dps14xfse90mhcpli' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_dataset_comparison' name='textscan.1qsizv11k7jnlf1cuuvs61fc3a2v'>
+            <connection class='textscan' directory='C:/Users/alleg/OneDrive/Desktop/Applied Data Analysis/Assesment/face.done' filename='tableau_dataset_comparison.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1qsizv11k7jnlf1cuuvs61fc3a2v' name='tableau_dataset_comparison.csv' table='[tableau_dataset_comparison#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='Dataset' ordinal='0' />
+            <column datatype='real' name='Accuracy' ordinal='1' />
+            <column datatype='real' name='F1-Score' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_dataset_comparison.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dataset</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Dataset]</local-name>
+            <parent-name>[tableau_dataset_comparison.csv]</parent-name>
+            <remote-alias>Dataset</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tableau_dataset_comparison.csv_381D254790BE420BB0F0A8607C87150A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accuracy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Accuracy]</local-name>
+            <parent-name>[tableau_dataset_comparison.csv]</parent-name>
+            <remote-alias>Accuracy</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_dataset_comparison.csv_381D254790BE420BB0F0A8607C87150A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1-Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F1-Score]</local-name>
+            <parent-name>[tableau_dataset_comparison.csv]</parent-name>
+            <remote-alias>F1-Score</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_dataset_comparison.csv_381D254790BE420BB0F0A8607C87150A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[Accuracy]' role='measure' type='quantitative' />
+      <column datatype='real' name='[F1-Score]' role='measure' type='quantitative' />
+      <column caption='tableau_dataset_comparison.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_dataset_comparison.csv_381D254790BE420BB0F0A8607C87150A]' role='measure' type='quantitative' />
+      <column-instance column='[Accuracy]' derivation='Sum' name='[sum:Accuracy:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F1-Score]' derivation='Sum' name='[sum:F1-Score:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/alleg/AppData/Local/Temp/TableauTemp/#TableauTemp_01s5ywf1s2pbq6108an3h0ok04re.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/06/2026 08:59:07 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Dataset</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Dataset]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dataset</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tableau_dataset_comparison.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[tableau_dataset_comparison.csv_381D254790BE420BB0F0A8607C87150A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Accuracy</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Accuracy]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Accuracy</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tableau_dataset_comparison.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_dataset_comparison.csv_381D254790BE420BB0F0A8607C87150A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F1-Score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F1-Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1-Score</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tableau_dataset_comparison.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_dataset_comparison.csv_381D254790BE420BB0F0A8607C87150A]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='winter_10_0' type='palette'>
+            <map to='#8fb202'>
+              <bucket>&quot;[federated.06ggg8v0s45dps14xfse90mhcpli].[sum:Accuracy:qk]&quot;</bucket>
+            </map>
+            <map to='#b9a0b4'>
+              <bucket>&quot;[federated.06ggg8v0s45dps14xfse90mhcpli].[sum:F1-Score:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='tableau_dataset_comparison.csv' id='tableau_dataset_comparison.csv_381D254790BE420BB0F0A8607C87150A'>
+            <properties context=''>
+              <relation connection='textscan.1qsizv11k7jnlf1cuuvs61fc3a2v' name='tableau_dataset_comparison.csv' table='[tableau_dataset_comparison#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='Dataset' ordinal='0' />
+                  <column datatype='real' name='Accuracy' ordinal='1' />
+                  <column datatype='real' name='F1-Score' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight1' name='[Action1_3A186833E20541EEB73A2661E9C92795]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Confusion Matrix (Celeb-DF)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Confusion Matrix (Celeb-DF)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_confusion_matrix' name='federated.16l5lid0y6dmc2112yblg0bcu65b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16l5lid0y6dmc2112yblg0bcu65b'>
+            <column datatype='string' name='[Actual Label]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Predicted Label]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Result Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Video Count]' role='measure' type='quantitative' />
+            <column-instance column='[Actual Label]' derivation='None' name='[none:Actual Label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Predicted Label]' derivation='None' name='[none:Predicted Label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Result Type]' derivation='None' name='[none:Result Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Video Count]' derivation='Sum' name='[sum:Video Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.16l5lid0y6dmc2112yblg0bcu65b].[none:Predicted Label:nk]' value='247' />
+            <format attr='height' field='[federated.16l5lid0y6dmc2112yblg0bcu65b].[none:Actual Label:nk]' value='65' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.16l5lid0y6dmc2112yblg0bcu65b].[none:Predicted Label:nk]' value='21' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='14' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='font-size' value='9' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.16l5lid0y6dmc2112yblg0bcu65b].[none:Predicted Label:nk]' value='14' />
+            <format attr='font-weight' field='[federated.16l5lid0y6dmc2112yblg0bcu65b].[none:Predicted Label:nk]' value='bold' />
+            <format attr='font-size' field='[federated.16l5lid0y6dmc2112yblg0bcu65b].[none:Actual Label:nk]' value='14' />
+            <format attr='font-weight' field='[federated.16l5lid0y6dmc2112yblg0bcu65b].[none:Actual Label:nk]' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.16l5lid0y6dmc2112yblg0bcu65b].[sum:Video Count:qk]' />
+              <text column='[federated.16l5lid0y6dmc2112yblg0bcu65b].[sum:Video Count:qk]' />
+              <text column='[federated.16l5lid0y6dmc2112yblg0bcu65b].[none:Result Type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='11' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16l5lid0y6dmc2112yblg0bcu65b].[none:Actual Label:nk]</rows>
+        <cols>[federated.16l5lid0y6dmc2112yblg0bcu65b].[none:Predicted Label:nk]</cols>
+      </table>
+      <simple-id uuid='{E3434899-3E05-4317-9445-4BC23B8DBB32}' />
+    </worksheet>
+    <worksheet name='Generalisation Drop: Training vs Unseen Data'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Generalisation Drop: Training vs Unseen Data</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_dataset_comparison' name='federated.06ggg8v0s45dps14xfse90mhcpli' />
+          </datasources>
+          <datasource-dependencies datasource='federated.06ggg8v0s45dps14xfse90mhcpli'>
+            <column datatype='real' name='[Accuracy]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Dataset]' role='dimension' type='nominal' />
+            <column datatype='real' name='[F1-Score]' role='measure' type='quantitative' />
+            <column-instance column='[Dataset]' derivation='None' name='[none:Dataset:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Accuracy]' derivation='Sum' name='[sum:Accuracy:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F1-Score]' derivation='Sum' name='[sum:F1-Score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.06ggg8v0s45dps14xfse90mhcpli].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.06ggg8v0s45dps14xfse90mhcpli].[sum:Accuracy:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.06ggg8v0s45dps14xfse90mhcpli].[sum:F1-Score:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.06ggg8v0s45dps14xfse90mhcpli].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-weight' field='[federated.06ggg8v0s45dps14xfse90mhcpli].[Multiple Values]' value='bold' />
+            <format attr='font-size' field='[federated.06ggg8v0s45dps14xfse90mhcpli].[Multiple Values]' value='12' />
+            <format attr='text-align' field='[federated.06ggg8v0s45dps14xfse90mhcpli].[Multiple Values]' value='center' />
+            <format attr='text-format' field='[federated.06ggg8v0s45dps14xfse90mhcpli].[Multiple Values]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='14' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.06ggg8v0s45dps14xfse90mhcpli].[Multiple Values]' value='p0.0%' />
+            <format attr='font-weight' field='[federated.06ggg8v0s45dps14xfse90mhcpli].[none:Dataset:nk]' value='bold' />
+            <format attr='font-size' field='[federated.06ggg8v0s45dps14xfse90mhcpli].[none:Dataset:nk]' value='12' />
+            <format attr='text-align' field='[federated.06ggg8v0s45dps14xfse90mhcpli].[none:Dataset:nk]' value='center' />
+            <format attr='font-weight' field='[federated.06ggg8v0s45dps14xfse90mhcpli].[:Measure Names]' value='bold' />
+            <format attr='font-size' field='[federated.06ggg8v0s45dps14xfse90mhcpli].[:Measure Names]' value='12' />
+            <format attr='text-align' field='[federated.06ggg8v0s45dps14xfse90mhcpli].[:Measure Names]' value='center' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ffffff' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.06ggg8v0s45dps14xfse90mhcpli].[:Measure Names]' />
+              <text column='[federated.06ggg8v0s45dps14xfse90mhcpli].[Multiple Values]' />
+              <lod column='[federated.06ggg8v0s45dps14xfse90mhcpli].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.06ggg8v0s45dps14xfse90mhcpli].[Multiple Values]</rows>
+        <cols>([federated.06ggg8v0s45dps14xfse90mhcpli].[none:Dataset:nk] / [federated.06ggg8v0s45dps14xfse90mhcpli].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{95B3156E-1744-4F36-945B-F4315358AD7A}' />
+    </worksheet>
+    <worksheet name='Training Progress: ResNet-18 vs EfficientNet-B0'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Training Progress: ResNet-18 vs EfficientNet-B0</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_training_curves' name='federated.14nzjuy0dfj08g11m2zxr1d7530k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14nzjuy0dfj08g11m2zxr1d7530k'>
+            <column datatype='real' name='[Accuracy]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Epoch]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Phase]' role='dimension' type='nominal' />
+            <column-instance column='[Epoch]' derivation='None' name='[none:Epoch:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Phase]' derivation='None' name='[none:Phase:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Accuracy]' derivation='Sum' name='[sum:Accuracy:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-weight' field='[federated.14nzjuy0dfj08g11m2zxr1d7530k].[sum:Accuracy:qk]' value='normal' />
+            <format attr='font-size' field='[federated.14nzjuy0dfj08g11m2zxr1d7530k].[sum:Accuracy:qk]' value='12' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='21' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='14' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.14nzjuy0dfj08g11m2zxr1d7530k].[none:Model:nk]' value='14' />
+            <format attr='font-weight' field='[federated.14nzjuy0dfj08g11m2zxr1d7530k].[none:Model:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.14nzjuy0dfj08g11m2zxr1d7530k].[none:Phase:nk]' />
+              <text column='[federated.14nzjuy0dfj08g11m2zxr1d7530k].[sum:Accuracy:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='auto' />
+                <format attr='wrap' value='auto' />
+                <format attr='text-align' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-style' value='normal' />
+                <format attr='text-decoration' value='none' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='12' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-range-scope' value='multi-mark' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='size' value='2.2872927188873291' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14nzjuy0dfj08g11m2zxr1d7530k].[sum:Accuracy:qk]</rows>
+        <cols>([federated.14nzjuy0dfj08g11m2zxr1d7530k].[none:Model:nk] / [federated.14nzjuy0dfj08g11m2zxr1d7530k].[none:Epoch:ok])</cols>
+      </table>
+      <simple-id uuid='{478F31E9-15B9-45D8-A53D-754671E1071C}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='20'>Deepfake Detection Model Analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98726' id='14' param='vert' type-v2='layout-flow' w='99298' x='351' y='637'>
+            <zone h='3583' id='15' type-v2='title' w='99298' x='351' y='637'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='95143' id='12' type-v2='layout-basic' w='99298' x='351' y='4220'>
+              <zone h='47572' id='7' param='horz' type-v2='layout-flow' w='99298' x='351' y='51791'>
+                <zone h='47572' id='5' type-v2='layout-basic' w='99298' x='351' y='51791'>
+                  <zone h='47572' id='9' name='Generalisation Drop: Training vs Unseen Data' w='49641' x='351' y='51791'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='47572' id='11' name='Confusion Matrix (Celeb-DF)' w='49657' x='49992' y='51791'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='47571' id='3' name='Training Progress: ResNet-18 vs EfficientNet-B0' w='99298' x='351' y='4220'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='4618' id='8' name='Training Progress: ResNet-18 vs EfficientNet-B0' pane-specification-id='0' param='[federated.14nzjuy0dfj08g11m2zxr1d7530k].[none:Phase:nk]' type-v2='color' w='6143' x='3466' y='12102' />
+        <zone h='4618' id='10' name='Generalisation Drop: Training vs Unseen Data' pane-specification-id='1' param='[federated.06ggg8v0s45dps14xfse90mhcpli].[:Measure Names]' type-v2='color' w='6143' x='4476' y='61465' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='20'>Deepfake Detection Model Analysis</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98726' id='16' param='vert' type-v2='layout-flow' w='99298' x='351' y='637'>
+                <zone h='3583' id='15' type-v2='title' w='99298' x='351' y='637'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47571' id='3' is-fixed='true' name='Training Progress: ResNet-18 vs EfficientNet-B0' w='99298' x='351' y='4220'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4618' id='8' name='Training Progress: ResNet-18 vs EfficientNet-B0' pane-specification-id='0' param='[federated.14nzjuy0dfj08g11m2zxr1d7530k].[none:Phase:nk]' type-v2='color' w='6143' x='3466' y='12102'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47572' id='9' is-fixed='true' name='Generalisation Drop: Training vs Unseen Data' w='49641' x='351' y='51791'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4618' id='10' name='Generalisation Drop: Training vs Unseen Data' pane-specification-id='1' param='[federated.06ggg8v0s45dps14xfse90mhcpli].[:Measure Names]' type-v2='color' w='6143' x='4476' y='61465'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47572' id='11' is-fixed='true' name='Confusion Matrix (Celeb-DF)' w='49657' x='49992' y='51791'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3B85EFBD-3C3A-493D-8F19-0F6E9DC65718}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{41A07443-6056-43AA-91DE-D481D6896984}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='72'>
+    <window class='worksheet' name='Training Progress: ResNet-18 vs EfficientNet-B0'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card pane-specification-id='0' param='[federated.14nzjuy0dfj08g11m2zxr1d7530k].[none:Phase:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <fields>
+                  <field>[federated.14nzjuy0dfj08g11m2zxr1d7530k].[none:Model:nk]</field>
+                </fields>
+                <multibucket>
+                  <bucket>&quot;EfficientNet-B0&quot;</bucket>
+                </multibucket>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.14nzjuy0dfj08g11m2zxr1d7530k].[none:Epoch:ok]</field>
+            <field>[federated.14nzjuy0dfj08g11m2zxr1d7530k].[none:Model:nk]</field>
+            <field>[federated.14nzjuy0dfj08g11m2zxr1d7530k].[none:Phase:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{25EF7E12-8149-4687-AA9E-90AAEE4492FF}' />
+    </window>
+    <window class='worksheet' name='Confusion Matrix (Celeb-DF)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16l5lid0y6dmc2112yblg0bcu65b].[sum:Video Count:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.16l5lid0y6dmc2112yblg0bcu65b].[none:Actual Label:nk]</field>
+            <field>[federated.16l5lid0y6dmc2112yblg0bcu65b].[none:Predicted Label:nk]</field>
+            <field>[federated.16l5lid0y6dmc2112yblg0bcu65b].[none:Result Type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{567D990A-0434-4A48-B475-85551CC8594C}' />
+    </window>
+    <window class='worksheet' name='Generalisation Drop: Training vs Unseen Data'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.06ggg8v0s45dps14xfse90mhcpli].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.06ggg8v0s45dps14xfse90mhcpli].[:Measure Names]</field>
+            <field>[federated.06ggg8v0s45dps14xfse90mhcpli].[none:Dataset:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C4BCC0C5-3A76-4D9F-A5B1-6D696A46807F}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Confusion Matrix (Celeb-DF)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Generalisation Drop: Training vs Unseen Data'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.06ggg8v0s45dps14xfse90mhcpli].[:Measure Names]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Training Progress: ResNet-18 vs EfficientNet-B0'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.14nzjuy0dfj08g11m2zxr1d7530k].[none:Phase:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{2F80F8D0-2194-4F55-B091-DF53C9EF9735}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{B6EC381E-7EB5-4BC2-B2A8-40281AB5C3D7}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Confusion Matrix (Celeb-DF)' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAGB0lEQVR4nO3a2W9UZRzG8eecWWBoS6kNUKKSRjYXNIKExSXiQiLEECJGEo1eGMOFFyYm
+      /hNGL73xyhjFyA0uQdCAjSgKRHYFWijQRbpMS6G1FGhnzvGCiDaAwXDqEZ7vJ2lyci7e/M6k
+      377vzDSI4zgWYCpMewAgTQQAawQAawQAawQAawQAawSAUeI4vvzzp3K5pCi6NT8tz6Y9AP5f
+      PnzvbXWPjNezq9borqlVCrLj9NNXHys/e5kWzalTqEjnh8uqqCgoSHvYBBAARjlzuk/3P7FK
+      k6tDrf9onXYfbdXKR2fpwLcb1NO5UMd2bVYpivXC2rc0s25i2uPeMI5AuEI2k9VAR4ta+88r
+      ujCksmLtP9ioWTPuVGtrq+6on6F4ZDjtMRMR8K8Q+Ltd3zdo7sNPKnexT+s+/VwVNVM1/57b
+      FU6oVVt7p6o0oL2N7Vr5/BpNnTQh7XFvWBBfosHBwcQWHSmV9f5n2xNbDxgrWUkKgkBVVVWJ
+      LTp0YVifbD2Y2HrAWOE9AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
+      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
+      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
+      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKxl0x4A/1/5XEZhEKocRcpmQg2P
+      lFSO4rTHShQ7AK7pgZm36401j2v29Cl6ZcUizZ4+Je2REkcAuKZfmjvU2NKtQyc61Xt2UI0t
+      3WmPlLhRAcQXB7RhwwZt3LLtr3tRpE2bNv/ngyF99dNu0/YDx1VRyOtYe1G31uHnklHvAeJz
+      vdq2r1lvrl2spv07tanhRy1dsVp79u5TIRNpzty5+vKLjZo17xE9teTBtGbGf6SprXj5+mBz
+      R4qTjJ0rjkCnTjZp6w87NXT+vOpqCmrYvkfdJ/dr19EeHd7xjfouBPquoSGNWZGQIJAK43Ia
+      l/vnz0AK43IKg+CK+/ls5vJ17m/XN6PRr0AYat7ipXrtxef0wXvvqJTJaXxlXvX3LNSEUlGV
+      dQs00rRb8x5ckNK4SML4fE6vr35MO349qfbusyrkszrV06+KQl51tdVq7+5THEsvPbNAvxX7
+      dehEp8pRpDiOFYahaqsrNGf6FP2w/7im1FTq+Kle5bIZ1VZXqPfsoIpnBtN+xOsWxHF81aNd
+      HEeKYykMR28SUbmsIAwVXOUvw5+GLgxr0avvJjspErV8yb369ucmvbx8oY60dKm3/5wWz61X
+      dWVB7d1ntG1vs154ep6aWouqrhyvTBiqVI7U239OkydVKJ/L6usdh/X4/FkKg0BhGKh+Wq06
+      T/dr/Za9aT/edbvmHhgEoa72Ox5mbu4tD5d09Q0oimPtbmxTse93LbqvXs3tPaqZOEFH24oa
+      LpX0/b7jOtLSpWUL71Y5inRmYEjVlQV19PYrDEJNrZ2oU8WzmlxTqSMtXbo4XFJbV1/aj/av
+      XHMHuBHsALhZ8D0ArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEA
+      rBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEA
+      rBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEA
+      rBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArGXHYtEwDPTQ/OljsTSQqCCO4zjp
+      RUtRpK/bmpJeFkgcRyBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY+wNrlmrvVr1c+wAAAABJRU5ErkJg
+      gg==
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Generalisation Drop: Training vs Unseen Data' width='192'>
+      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
+      dQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Training Progress: ResNet-18 vs EfficientNet-B0' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

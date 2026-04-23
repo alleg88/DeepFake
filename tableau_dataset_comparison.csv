@@ -1,0 +1,3 @@
+Dataset,Accuracy,F1-Score
+FaceForensics++ (Validation),0.9167,0.9206
+Celeb-DF v2 (Unseen Test),0.7587939698492462,0.7623762376237624

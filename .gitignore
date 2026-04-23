@@ -1,0 +1,7 @@
+data/
+.ipynb_checkpoints/
+__pycache__/
+repot/
+tableau_run/
+Face Detection Final 2.ipynb
+Face Detection Final.ipynb
